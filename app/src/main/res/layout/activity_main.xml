@@ -1,137 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
     tools:ignore="Overdraw">
 
-
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quick_settings_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:id="@+id/title_qs"
-        android:textStyle="bold"/>
-
-    <RadioGroup
-        android:layout_below="@+id/title_qs"
-        android:layout_marginTop="20dp"
-        android:id="@+id/radio_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/hd_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/high_definition"
-            />
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/sd_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/standard_definition"
-            />
-
-    </RadioGroup>
-
-
-    <CheckBox
-        android:id="@+id/audio_check_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/radio_group"
-        android:layout_below="@+id/radio_group"
-        android:layout_marginTop="30dp"
-        android:checked="true"
-        android:text="@string/record_audio"
-        app:theme="@style/CheckboxStyle"/>
-
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_below="@+id/audio_check_box"
-        android:layout_centerHorizontal="true"
-        android:background="#b1b1b1"
-        android:layout_marginTop="40dp"
-        android:id="@+id/hl1"
-        android:alpha="0.5"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/or_title"
-        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_below="@+id/hl1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tvOr"/>
+        android:layout_marginBottom="32dp"/>
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_centerHorizontal="true"
-        android:background="#b1b1b1"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/tvOr"
-        android:id="@+id/hl2"
-        android:alpha="0.5"
-        tools:ignore="ContentDescription" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shared_link_label"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"/>
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/shared_link_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/hl2"
-        android:layout_marginTop="40dp"
-        android:gravity="center">
+        android:text="@string/no_link_shared"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="#f5f5f5"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="24dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/custom_settings_title"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:id="@+id/tvCustom"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_label"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp"/>
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/custom_settings_switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/tvCustom"
-            android:layout_marginStart="20dp"/>
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
+    <TextView
+        android:id="@+id/status_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:text="@string/waiting_for_link"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="#e8f5e9"/>
 
-        <Button
-            android:id="@+id/button_start"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/start_recording"
-            android:textColor="@android:color/white"
-            android:background="@drawable/ripple_effect"
-            tools:text="@string/start_recording"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginTop="48dp"
+        android:gravity="center"/>
 
-    </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>

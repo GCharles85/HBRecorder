@@ -4,7 +4,7 @@ android {
     compileSdk 34
     defaultConfig {
         applicationId "com.hbisoft.hbrecorderexample"
-        minSdk 17
+        minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -26,13 +26,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
-    implementation 'androidx.preference:preference:1.2.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.5.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation project(path: ':hbrecorder')
 }
