@@ -1,5 +1,11 @@
 apply plugin: 'com.android.application'
 
+def secretsFile = rootProject.file("secrets.properties")
+def secretsProperties = new Properties()
+if (secretsFile.exists()) {
+    secretsProperties.load(new FileInputStream(secretsFile))
+}
+
 android {
     compileSdk 34
     defaultConfig {
@@ -9,6 +15,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "RAPIDAPI_KEY", "\"${secretsProperties.getProperty('RAPIDAPI_KEY', '')}\""
+        buildConfigField "String", "RAPIDAPI_HOST", "\"${secretsProperties.getProperty('RAPIDAPI_HOST', '')}\""
     }
     buildTypes {
         release {
@@ -22,6 +31,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.hbisoft.hbrecorderexample'
+
+    buildFeatures {
+        buildConfig true
+    }
 
 }
 

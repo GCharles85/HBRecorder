@@ -25,8 +25,8 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String RAPIDAPI_KEY = "4fe457fa05msh33af7c5944c9df2p1fe139jsn5d912e84b0ac";
-    private static final String RAPIDAPI_HOST = "tiktok-video-downloader-api.p.rapidapi.com";
+    private static final String RAPIDAPI_KEY = BuildConfig.RAPIDAPI_KEY;
+    private static final String RAPIDAPI_HOST = BuildConfig.RAPIDAPI_HOST;
 
     private TextView sharedLinkTextView;
     private TextView statusTextView;
