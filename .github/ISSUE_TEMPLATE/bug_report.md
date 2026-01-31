@@ -1,35 +1,35 @@
 ---
 name: Bug report
-about: Issue template for a bug reports
+about: Issue template for bug reports
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-READ THIS BEFORE OPENING AN ISSUE:
------------------------
-- Fill in all the information below.
-- Have a look at previously asked questions to see if your issue has been resolved.
-- Properly format your issue.
-- All issues should be asked in English.
-- Delete all the above before posting your issue
-
 **Describe the bug**
 A clear and concise description of what the bug is.
 
+**Steps to reproduce**
+1.
+2.
+3.
+
+**Expected behavior**
+What you expected to happen.
+
+**Actual behavior**
+What actually happened.
+
 **Log**
-Please provide a well formatted bug report (by adding 4 spaces before the log)
+Please provide any relevant error logs.
 
-**Can it be reproduced in demo app**
-Yes or no
-
-**HBRecorder version**
-for example 1.0.1
+**Auntie version**
+e.g., 1.0.0
 
 **Device information**
-- Make/model
-- SDK version
+- Make/model:
+- Android version:
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.

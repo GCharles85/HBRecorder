@@ -9,7 +9,7 @@ if (secretsFile.exists()) {
 android {
     compileSdk 34
     defaultConfig {
-        applicationId "com.hbisoft.hbrecorderexample"
+        applicationId "com.auntie.app"
         minSdk 21
         targetSdk 34
         versionCode 1
@@ -30,7 +30,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.hbisoft.hbrecorderexample'
+    namespace 'com.auntie.app'
 
     buildFeatures {
         buildConfig true

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TikTok Link Receiver</string>
+    <string name="app_name">Auntie</string>
     <string name="shared_link_label">Shared Link:</string>
     <string name="no_link_shared">No link shared yet</string>
     <string name="status_label">Status:</string>

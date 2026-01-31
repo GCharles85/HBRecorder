@@ -1,4 +1,4 @@
-package com.hbisoft.hbrecorderexample;
+package com.auntie.app;
 
 import org.junit.Test;
 
